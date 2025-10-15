@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Interativo - Arquitetura</title>
+
+  <link rel="stylesheet" href="">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="40"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/tours.html">Tours intertivos</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="py-5 bg-light">
+    <div class="container text-center text-md-start">
+
+      <h1 class="display-4 mb-4">Studio Ares</h1>
+
+      <a href="#tour" class="btn btn-primary btn-lg mb-4">Começar Tour</a>
+
+      <div class="my-4" style="height: 250px; background-color: #e9ecef; border-radius: 15px;">
+        <p class="text-muted pt-5">Imagem do projeto aqui</p>
+      </div>
+
+      <div class="mt-4">
+        <p id="sobre" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula justo quis ex fringilla,
+          in fermentum justo dictum.</p>
+        <a href="sobre.html" class="btn btn-outline-primary">Ler mais</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Por que escolher nosso serviço?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">🏠 Projetos personalizados</div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">💡 Design inovador</div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">📐 Planejamento eficiente</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Interativo -->
+  <section id="tour" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Tour Interativo - Antes e Depois</h2>
+
+      <div id="tourCarousel" class="carousel slide mx-auto" style="max-width: 600px;" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 - Antes -->
+          <div class="carousel-item active">
+            <a-scene embedded style="width: 100%; height: 300px;">
+              <a-sky
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80"
+                rotation="0 -90 0"></a-sky>
+            </a-scene>
+            <p class="instrucao mt-2">Antes - Gire seu celular ou arraste com o mouse!</p>
+          </div>
+
+          <!-- Slide 2 - Depois -->
+          <div class="carousel-item">
+            <div class="scene-container" style="width:100%; height:300px;"></div>
+            <p class="instrucao mt-2">Depois - Gire seu celular ou arraste com o mouse!</p>
+          </div>
+
+        </div>
+
+        <!-- Controles do Carousel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+
+        <a href="tuor.html" class="btn btn-outline-primary">Exolore mais tours</a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contato -->
+  <section id="contato" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Entre em contato</h2>
+      <form class="mx-auto" style="max-width: 400px;">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Seu nome" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Seu e-mail" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-3 text-center">
+    © 2025 Empresa de Arquitetura - Todos os direitos reservados.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script do tour -->
+  <!--<script src="script.js"></script> -->
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"> </script>
+</body>
+
+<script>
+  var tourCarousel = document.getElementById('tourCarousel');
+
+  tourCarousel.addEventListener('slid.bs.carousel', function (event) {
+    var activeSlide = event.relatedTarget;
+    var container = activeSlide.querySelector('.scene-container');
+
+    if (container) {
+      // Remove cena antiga se existir
+      container.innerHTML = '';
+
+      // Cria nova cena
+      var scene = document.createElement('a-scene');
+      scene.setAttribute('embedded', '');
+      scene.style.width = '100%';
+      scene.style.height = '300px';
+
+      var sky = document.createElement('a-sky');
+      sky.setAttribute('src', 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
+      sky.setAttribute('rotation', '0 -90 0');
+
+      scene.appendChild(sky);
+      container.appendChild(scene);
+    }
+  });
+
+</script>
+
+
+</html>
