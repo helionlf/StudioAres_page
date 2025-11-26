@@ -4,28 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour Interativo - Arquitetura</title>
-
-  <link rel="stylesheet" href="">
+  <title>Studio Ares - Arquitetura & Design</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- CSS Customizado -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <!-- Cabeçalho -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" height="40"></a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="brand-text">STUDIO ARES</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="pages/tours.html">Tours intertivos</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/tours.html">Tours Interativos</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/sobre.html">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="pages/contato.html">Contato</a></li>
         </ul>
@@ -34,52 +37,86 @@
   </nav>
 
   <!-- Hero -->
-  <section class="py-5 bg-light">
-    <div class="container text-center text-md-start">
-
-      <h1 class="display-4 mb-4">Studio Ares</h1>
-
-      <a href="#tour" class="btn btn-primary btn-lg mb-4">Começar Tour</a>
-
-      <div class="my-4" style="height: 250px; background-color: #e9ecef; border-radius: 15px;">
-        <p class="text-muted pt-5">Imagem do projeto aqui</p>
+  <section class="hero-section py-5">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="display-4 fw-bold mb-4">Transformamos seus <span class="text-primary">sonhos</span> em realidade</h1>
+          <p class="lead mb-4">Criamos espaços que inspiram, funcionam e refletem sua personalidade através de designs arquitetônicos inovadores e personalizados.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#tour" class="btn btn-primary btn-lg px-4">Começar Tour</a>
+            <a href="#contato" class="btn btn-outline-primary btn-lg px-4">Solicitar Orçamento</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image-container">
+            <div class="hero-placeholder d-flex align-items-center justify-content-center">
+              <div class="text-center">
+                <i class="bi bi-building display-1 text-muted"></i>
+                <p class="text-muted mt-3">Visualização do projeto</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="mt-4">
-        <p id="sobre" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula justo quis ex fringilla,
-          in fermentum justo dictum.</p>
-        <a href="sobre.html" class="btn btn-outline-primary">Ler mais</a>
-      </div>
-
     </div>
   </section>
 
-
   <!-- Benefícios -->
-  <section id="beneficios" class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Por que escolher nosso serviço?</h2>
+  <section id="beneficios" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Por que escolher nosso serviço?</h2>
+        <p class="lead text-muted">Excelência em cada detalhe do seu projeto</p>
+      </div>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card p-4 h-100">🏠 Projetos personalizados</div>
+          <div class="card benefit-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="benefit-icon mb-3">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <h5 class="card-title">Projetos Personalizados</h5>
+              <p class="card-text text-muted">Cada projeto é único e desenvolvido especialmente para atender suas necessidades e estilo de vida.</p>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <div class="card p-4 h-100">💡 Design inovador</div>
+          <div class="card benefit-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="benefit-icon mb-3">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h5 class="card-title">Design Inovador</h5>
+              <p class="card-text text-muted">Utilizamos as mais recentes tendências e tecnologias para criar espaços funcionais e estéticos.</p>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <div class="card p-4 h-100">📐 Planejamento eficiente</div>
+          <div class="card benefit-card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="benefit-icon mb-3">
+                <i class="bi bi-clock"></i>
+              </div>
+              <h5 class="card-title">Planejamento Eficiente</h5>
+              <p class="card-text text-muted">Garantimos prazos e orçamentos respeitados com um processo de trabalho organizado e transparente.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Tour Interativo -->
-  <section id="tour" class="py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="mb-4">Tour Interativo - Antes e Depois</h2>
+  <section id="tour" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Tour Interativo</h2>
+        <p class="lead text-muted">Veja a transformação completa em 360°</p>
+      </div>
 
-      <div id="tourCarousel" class="carousel slide mx-auto" style="max-width: 600px;" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div id="tourCarousel" class="carousel slide mx-auto tour-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-3 overflow-hidden shadow-lg">
 
           <!-- Slide 1 - Antes -->
           <div class="carousel-item active">
@@ -108,70 +145,146 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
+      </div>
 
-        <a href="tuor.html" class="btn btn-outline-primary">Exolore mais tours</a>
-
+      <div class="text-center mt-5">
+        <a href="pages/tours.html" class="btn btn-outline-primary btn-lg">Explore Mais Tours</a>
       </div>
     </div>
   </section>
 
-
   <!-- Contato -->
-  <section id="contato" class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4">Entre em contato</h2>
-      <form class="mx-auto" style="max-width: 400px;">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Seu nome" required>
+  <section id="contato" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Entre em Contato</h2>
+        <p class="lead text-muted">Pronto para iniciar seu projeto? Fale conosco!</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="contact-form" class="contact-form p-4 rounded-3 shadow-sm bg-white">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input id="name" type="text" class="form-control form-control-lg" placeholder="Seu nome" required>
+              </div>
+              <div class="col-md-6">
+                <input id="email" type="email" class="form-control form-control-lg" placeholder="Seu e-mail" required>
+              </div>
+              <div class="col-12">
+                <input id="subject" class="form-control form-control-lg" placeholder="Assunto" required>
+              </div>
+              <div class="col-12">
+                <textarea id="message" class="form-control form-control-lg" rows="4" placeholder="Sua mensagem" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100 py-3">Enviar Mensagem</button>
+              </div>
+            </div>
+          </form>
+
+          <p id="status"></p>
         </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Seu e-mail" required>
-        </div>
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-      </form>
+      </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="bg-dark text-white py-3 text-center">
-    © 2025 Empresa de Arquitetura - Todos os direitos reservados.
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">© 2025 Studio Ares - Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="social-links">
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- A-Frame -->
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+
+  <!-- Importar EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script src="js/script.js"></script>
+
   <!-- Script do tour -->
-  <!--<script src="script.js"></script> -->
-  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"> </script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var tourCarousel = document.getElementById('tourCarousel');
+          
+          if (!tourCarousel) return; // Se não encontrar o carousel, para aqui
+
+          tourCarousel.addEventListener('slid.bs.carousel', function (event) {
+              // Verifica se o event.relatedTarget existe
+              if (!event.relatedTarget) return;
+              
+              var activeSlide = event.relatedTarget;
+              var container = activeSlide.querySelector('.scene-container');
+
+              if (container) {
+                  // Remove cena antiga se existir
+                  container.innerHTML = '';
+
+                  // Cria container para a cena
+                  var sceneContainer = document.createElement('div');
+                  sceneContainer.className = 'a-scene-container';
+
+                  // Cria nova cena
+                  var scene = document.createElement('a-scene');
+                  scene.setAttribute('embedded', '');
+                  scene.setAttribute('style', 'width: 100%; height: 100%;');
+                  
+                  // Adiciona um ID único para o canvas
+                  scene.setAttribute('canvas', 'canvas-' + Date.now());
+
+                  var sky = document.createElement('a-sky');
+                  sky.setAttribute('src', 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
+                  sky.setAttribute('rotation', '0 -90 0');
+
+                  scene.appendChild(sky);
+                  sceneContainer.appendChild(scene);
+                  container.appendChild(sceneContainer);
+
+                  // Força o A-Frame a renderizar
+                  setTimeout(() => {
+                      if (scene.hasLoaded) {
+                          scene.emit('rendererresize');
+                      }
+                  }, 100);
+              }
+          });
+
+          // Inicializa o segundo slide se for o primeiro a ser carregado
+          var secondSlide = document.querySelector('.carousel-item:not(.active) .scene-container');
+          if (secondSlide && secondSlide.children.length === 0) {
+              // Cria o conteúdo para o segundo slide
+              var sceneContainer = document.createElement('div');
+              sceneContainer.className = 'a-scene-container';
+
+              var scene = document.createElement('a-scene');
+              scene.setAttribute('embedded', '');
+              scene.setAttribute('style', 'width: 100%; height: 100%;');
+
+              var sky = document.createElement('a-sky');
+              sky.setAttribute('src', 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
+              sky.setAttribute('rotation', '0 -90 0');
+
+              scene.appendChild(sky);
+              sceneContainer.appendChild(scene);
+              secondSlide.appendChild(sceneContainer);
+          }
+      });
+  </script>
 </body>
-
-<script>
-  var tourCarousel = document.getElementById('tourCarousel');
-
-  tourCarousel.addEventListener('slid.bs.carousel', function (event) {
-    var activeSlide = event.relatedTarget;
-    var container = activeSlide.querySelector('.scene-container');
-
-    if (container) {
-      // Remove cena antiga se existir
-      container.innerHTML = '';
-
-      // Cria nova cena
-      var scene = document.createElement('a-scene');
-      scene.setAttribute('embedded', '');
-      scene.style.width = '100%';
-      scene.style.height = '300px';
-
-      var sky = document.createElement('a-sky');
-      sky.setAttribute('src', 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
-      sky.setAttribute('rotation', '0 -90 0');
-
-      scene.appendChild(sky);
-      container.appendChild(scene);
-    }
-  });
-
-</script>
-
-
 </html>
