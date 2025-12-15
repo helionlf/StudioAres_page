@@ -1,11 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Sobre - Studio Ares</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="../css/sobre.css">
 </head>
 <body>
-    
+
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <span class="brand-text">STUDIO ARES</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tours.html">Tours Interativos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero da Página Sobre -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-80 py-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">Nossa <span class="text-primary">História</span> e Missão</h1>
+                    <p class="lead mb-4">Há mais de 15 anos transformando espaços e criando experiências arquitetônicas que inspiram e duram para sempre.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <div class="hero-placeholder d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <i class="bi bi-buildings display-1 text-muted"></i>
+                                <p class="text-muted mt-3">Studio Ares - Arquitetura & Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="fw-bold mb-4">Nossa Jornada</h2>
+                            <p class="mb-4">Fundado em 2010 pelo arquiteto <strong>Miguel Ares</strong>, o Studio Ares nasceu da paixão por criar espaços que não apenas abrigam pessoas, mas que contam histórias e melhoram a qualidade de vida.</p>
+                            <p class="mb-4">Começamos como um pequeno escritório com apenas 3 colaboradores e hoje contamos com uma equipe multidisciplinar de mais de 30 profissionais especializados.</p>
+                            <p>Nossa evolução acompanhou as transformações tecnológicas, incorporando realidade virtual, modelagem 3D e soluções sustentáveis em todos os nossos projetos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h5 class="fw-bold text-primary">2010</h5>
+                            <p>Fundação do Studio Ares com foco em projetos residenciais personalizados.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5 class="fw-bold text-primary">2014</h5>
+                            <p>Expansão para projetos comerciais e primeiro prêmio de design arquitetônico.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5 class="fw-bold text-primary">2018</h5>
+                            <p>Implementação de tecnologias 3D e realidade virtual em todos os projetos.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5 class="fw-bold text-primary">2023</h5>
+                            <p>Certificação Green Building e expansão internacional para Portugal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valores e Missão -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Nossos Valores</h2>
+                <p class="lead text-muted">Princípios que guiam cada projeto</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card benefit-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="benefit-icon mb-3">
+                                <i class="bi bi-heart"></i>
+                            </div>
+                            <h5 class="card-title">Paixão pelo Design</h5>
+                            <p class="card-text text-muted">Acreditamos que a arquitetura deve emocionar. Cada detalhe é pensado com cuidado e amor pelo que fazemos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card benefit-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="benefit-icon mb-3">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h5 class="card-title">Sustentabilidade</h5>
+                            <p class="card-text text-muted">Compromisso com o meio ambiente através de materiais ecológicos e soluções energéticas eficientes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card benefit-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="benefit-icon mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h5 class="card-title">Foco no Cliente</h5>
+                            <p class="card-text text-muted">Seu sonho é nossa prioridade. Trabalhamos em estreita colaboração para superar expectativas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stats-number">150+</div>
+                    <div class="stats-label">Projetos Concluídos</div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stats-number">12</div>
+                    <div class="stats-label">Prêmios Recebidos</div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stats-number">98%</div>
+                    <div class="stats-label">Clientes Satisfeitos</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">15</div>
+                    <div class="stats-label">Anos de Experiência</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe (Opcional - pode ser expandida) -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Nossa Equipe</h2>
+                <p class="lead text-muted">Profissionais apaixonados por arquitetura</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-person-circle display-4 text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Nome do Funcionário</h5>
+                            <p class="text-primary mb-2">Cargo do funcionário</p>
+                            <p class="card-text text-muted small">Mestre em Arquitetura Sustentável com 20 anos de experiência em design residencial e comercial.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card team-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-person-circle display-4 text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Nome do Funcionário</h5>
+                            <p class="text-primary mb-2">Cargo do funcionário</p>
+                            <p class="card-text text-muted small">Especialista em espaços funcionais e estéticos, com foco em ergonomia e bem-estar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 Studio Ares - Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
